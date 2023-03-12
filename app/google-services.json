@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "629456238204",
+    "project_id": "bmap-fb5f9",
+    "storage_bucket": "bmap-fb5f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:629456238204:android:9a8eaaf1c89c65ea693bf9",
+        "android_client_info": {
+          "package_name": "com.finalproject.bmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "629456238204-fu6cg36dv6759312s4jb1lra4d2v216l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKVWX6vrHc7mqW-Us7mBlqhMiKcGxY7KQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "629456238204-fu6cg36dv6759312s4jb1lra4d2v216l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backcolor"
+    tools:context=".MainDashboard"
+    android:orientation="horizontal"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    android:id="@+id/drawerlayout">
+<com.google.android.material.navigation.NavigationView
+    android:layout_width="222dp"
+    android:layout_height="match_parent"
+    android:id="@+id/nabigationview"
+    app:headerLayout="@layout/headerfile"
+    app:menu="@menu/sidemenu"
+    android:layout_gravity="start"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="75dp"
+        android:layout_height="67dp"
+        android:id="@+id/toolbar"
+        android:background="@color/bmap"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:title="Toolbars"
+        app:titleTextColor="@color/black"
+        app:titleMargin="10dp"
+        android:layout_marginBottom="5dp"
+        tools:ignore="MissingConstraints"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="321dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/top_background_box"
+        android:fontFamily="@font/fugaz_one"
+        android:text="    BMAP"
+
+        android:textColor="@color/black"
+        android:textSize="55dp"
+        app:layout_constraintBottom_toTopOf="@+id/fareCalText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toEndOf="@+id/toolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fareCalText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:fontFamily="@font/poppins_black_italic"
+        android:text="Fare Calculator"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/fareCalculator"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:background="@drawable/backgroundbox"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fareCalText"
+        app:srcCompat="@drawable/farecal" />
+
+    <TextView
+        android:id="@+id/busTimingText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/poppins_black_italic"
+        android:text="Bus Timing"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fareCalculator" />
+
+    <ImageView
+        android:id="@+id/busTiming"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+
+        android:background="@drawable/backgroundbox"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busTimingText"
+        app:srcCompat="@drawable/timetable" />
+
+    <TextView
+        android:id="@+id/nearbyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/poppins_black_italic"
+        android:text="Nearby Stops"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/busTiming" />
+
+    <ImageView
+        android:id="@+id/NearbyButton"
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+
+        android:background="@drawable/backgroundbox"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nearbyText"
+        app:srcCompat="@drawable/busstop" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>
